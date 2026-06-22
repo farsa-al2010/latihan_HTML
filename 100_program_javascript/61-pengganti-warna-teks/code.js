@@ -1,1 +1,0 @@
-document.getElementById("tombol").onclick=function(){ var h=document.getElementById("hasil"); h.textContent=document.getElementById("teks").value; h.style.color=document.getElementById("warna").value; };
