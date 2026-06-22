@@ -1,0 +1,2 @@
+var tombol=document.querySelectorAll("button"); var data=["batu","gunting","kertas"];
+tombol.forEach(function(btn){ btn.onclick=function(){ var aku=btn.dataset.pilih; var musuh=data[Math.floor(Math.random()*3)]; var h="Seri"; if((aku=="batu"&&musuh=="gunting")||(aku=="gunting"&&musuh=="kertas")||(aku=="kertas"&&musuh=="batu")) h="Menang"; else if(aku!=musuh) h="Kalah"; document.getElementById("hasil").textContent="Kamu: "+aku+"\nKomputer: "+musuh+"\n"+h; }; });
